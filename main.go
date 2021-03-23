@@ -191,9 +191,9 @@ to pause the sim (while still collecting data).
 	}
 	service := &Service{FeeSim: feesim, DLog: dLog, Cfg: cfg}
 
-	os.Stdout.Close()
-	os.Stderr.Close()
-	os.Stdin.Close()
+	//os.Stdout.Close()
+	//os.Stderr.Close()
+	//os.Stdin.Close()
 
 	errc := make(chan error)
 	go func() { errc <- feesim.Run() }()
