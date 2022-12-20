@@ -53,7 +53,7 @@ func LoadData(datadir string) {
 }
 
 type MempoolEntry struct {
-	Size            int64    `json:"size"`
+	Size            int64    `json:"vsize"`
 	Time            int64    `json:"time"`
 	Depends         []string `json:"depends"`
 	Fee             float64  `json:"fee"`

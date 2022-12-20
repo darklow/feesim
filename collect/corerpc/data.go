@@ -12,7 +12,7 @@ const (
 // There is no longer any concept of priority in Bitcoin Core
 // So any mention of priority here is vestigial
 type MempoolEntry struct {
-	Size_           int64    `json:"size"`
+	Size_           int64    `json:"vsize"`
 	Time_           int64    `json:"time"`
 	Depends_        []string `json:"depends"`
 	Fee             float64  `json:"fee"`
